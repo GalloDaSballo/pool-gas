@@ -4,7 +4,7 @@ import { deployments, ethers, waffle } from "hardhat";
 
 export async function deploy<T extends Contract>(
     deploymentName: string,
-    { from, args, connect }: { from?: string; args: Array<unknown>; connect?: Signer },
+    { from, args, connect }: { from?: string; args?: Array<unknown>; connect?: Signer },
     contractName: string = deploymentName,
 ): Promise<T> {
     // Unless overridden, deploy from named address "deployer"

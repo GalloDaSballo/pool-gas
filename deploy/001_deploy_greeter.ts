@@ -7,7 +7,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     const { deployer } = await getNamedAccounts();
     const greeting = "Hello, world!";
 
-    await deployments.deploy("Greeter", {
+    await deployments.deploy("LoopArrayRemoval", {
         from: deployer,
         args: [greeting],
         log: true,

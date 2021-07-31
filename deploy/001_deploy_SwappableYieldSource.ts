@@ -5,11 +5,10 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     const { deployments, getNamedAccounts } = hre;
 
     const { deployer } = await getNamedAccounts();
-    const greeting = "Hello, world!";
 
-    await deployments.deploy("LoopArrayRemoval", {
+    await deployments.deploy("SwappableYieldSource", {
         from: deployer,
-        args: [greeting],
+        args: [],
         log: true,
     });
 };

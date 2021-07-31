@@ -50,7 +50,10 @@
     "ts-generator": "^0.1.1",
     "ts-node": "^9.1.1",
     "typechain": "^4.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "@openzeppelin/contracts-upgradeable": "3.4.0",
+    "@pooltogether/fixed-point": "1.0.0",
+    "@pooltogether/yield-source-interface": "1.0.1"
   },
   "files": [
     "/contracts"
